@@ -1,0 +1,47 @@
+=====Menubar=====
+---Import---
+Load from excel: 
+    - This functionality allows loading data from
+---Reports---
+Escalated items:
+    - This report is storing all items, which were validated using Escalated button in validation window box.
+    - Items from this report can not only be viewed, but also valited further: Junked, Fixed or Ignored
+Ignored items:
+    - This report is storing all items, which were validated using Escalated button in validation window box.
+---Help---
+Shows text describing tools usage and few helpfull tips & tricks.
+=====Filter Options=====
+
+=====Listbox=====
+Each item(row) is representing a batch aggregating all error types (descrition colum) for respective identifier.
+
+=====Validation Window=====
+Is opened after double-click on any of listbox items.
+---Buttons---
+Fixed:
+    - Should be used, when respective batch was somehow fixed, e.g. file reprocessed, template adjusted.
+    - These items are reflected in validation table, but will not appear in any report.
+Junked:
+    - Should be used, when...
+    - These items are reflected in validation table, but will not appear in any report.
+Escalated:
+    - Should be used, when...
+    - These items are reflected in validation table and will be appear in escalated items report.
+Ignored:
+    - Should be used, when respective batch was somehow fixed, e.g. file reprocessed, template adjusted.
+    - These items are reflected in validation table and will be appear in ignored items report.
+=====Underlying Database=====
+SQLite database is used for sourcing data.
+---Tables---
+tblErrorsMonitoring:
+    - Main table, which is storing all data loaded from errors spreadsheet downloaded from pF tool.
+tblValidationStatus:
+    - Table storing info about all validated items.
+tblStatus:
+    - Storing text values for validation status numeric values, which are used in tblValidationStatus.
+=====Keyboard Shortcuts=====
+Ctrl+Q: Close application.
+Ctrl+L: Load data from excel source.
+Ctrl+H: Show help text.
+Ctrl+I: Show list of ignored validation items.
+Ctrl+E: Show list of escalated validation items.

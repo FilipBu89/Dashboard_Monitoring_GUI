@@ -1,0 +1,10 @@
+{
+    "IgnoreDescriptionTypes": [
+        "NoShareclassID",
+		"NoFundUnitID",
+		"CompanyIDMismatch",
+		"LineWithoutData"
+    ],
+	"DatabaseFile": "MyDataFeedIN_Test",
+	"SharedLocation": "//fefifilestore.file.core.windows.net/brno/Personal Backups/FilipRemote/Python/PubliFund_DataFeedIN_Monitoring"
+}
